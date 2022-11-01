@@ -1,4 +1,37 @@
 <h2>Bonsai Store App</h2>
+<p>
+  <mat-toolbar>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="products">
+        <mat-icon>forest</mat-icon>
+        <span>Products</span>
+      </a>
+      <a mat-menu-item routerLink="cart">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Shopping Cart</span>
+      </a>
+    </mat-menu>
+    <span class="example-spacer"></span>
+
+    <span>Bonsai Store App</span>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Shopping Cart Icon"
+    >
+      <mat-icon matBadge="0" matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
+
 <nav>
   <a
     class="button"
@@ -7,7 +40,7 @@
     ariaCurrentWhenActive="page"
   >
     Products
-  </a> 
+  </a>
   <a
     class="button"
     routerLink="cart"
@@ -17,13 +50,12 @@
     Shopping Cart
   </a>
   <a
-  class="button"
-  routerLink="aboutus"
-  routerLinkActive="activebutton"
-  aruaCurrentWhenActive="page"
+    class="button"
+    routerLink="aboutus"
+    routerLinkActive="activebutton"
+    aruaCurrentWhenActive="page"
   >
-  About Us
-  </a
-  >
+    About Us
+  </a>
 </nav>
 <router-outlet></router-outlet>
