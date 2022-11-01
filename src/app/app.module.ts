@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ProductsListComponent } from './products-list/products-list.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ProductsListComponent } from './components/products-list/products-list.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
