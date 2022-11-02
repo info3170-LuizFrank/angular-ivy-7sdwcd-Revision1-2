@@ -15,6 +15,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ProductComponent } from './components/product/product.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { ProductComponent } from './components/product/product.component';
       { path: 'products', component: ProductsListComponent },
       { path: 'cart', component: ShoppingCartComponent },
       { path: 'aboutus', component: AboutusComponent },
+      { path: 'contactus', component: ContactusComponent },
       { path: 'products-list', redirectTo: '/products', pathMatch: 'full' },
       { path: 'prods', redirectTo: '/products', pathMatch: 'full' },
       { path: '', redirectTo: '/products', pathMatch: 'full' },
@@ -45,6 +47,7 @@ import { ProductComponent } from './components/product/product.component';
     PageNotFoundComponent,
     AboutusComponent,
     ProductComponent,
+    ContactusComponent,
   ],
   bootstrap: [AppComponent],
 })
