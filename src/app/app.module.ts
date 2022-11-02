@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-import { ProductsListComponent } from './components/products-list/products-list.component';
-import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { AboutusComponent } from './components/aboutus/aboutus.component';
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatCardModule } from '@angular/material/card';
+
+import { AppComponent } from './app.component';
+import { ProductsListComponent } from './components/products-list/products-list.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   imports: [
@@ -36,13 +37,15 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatMenuModule,
     BrowserAnimationsModule,
     MatBadgeModule,
+    MatCardModule,
   ],
   declarations: [
     AppComponent,
     ProductsListComponent,
     ShoppingCartComponent,
     PageNotFoundComponent,
-    AboutusComponent
+    AboutusComponent,
+    ProductComponent,
   ],
   bootstrap: [AppComponent],
 })
