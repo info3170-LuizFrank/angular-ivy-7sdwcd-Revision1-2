@@ -26,9 +26,8 @@ import { ProductComponent } from './components/product/product.component';
       { path: 'aboutus', component: AboutusComponent },
       { path: 'products-list', redirectTo: '/products', pathMatch: 'full' },
       { path: 'prods', redirectTo: '/products', pathMatch: 'full' },
-      // First test with empty route
       { path: '', redirectTo: '/products', pathMatch: 'full' },
-      //{ path: 'products/:id', redirectTo: '/product', pathMatch: 'prefix' },
+      { path: 'products/:id', redirectTo: '/products', pathMatch: 'prefix' },
       { path: '**', component: PageNotFoundComponent },
     ]),
     FormsModule,
