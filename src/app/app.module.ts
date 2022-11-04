@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ProductComponent } from './components/product/product.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { ProductShoppingcartComponent } from './components/product-shoppingcart/product-shoppingcart.component';
 
 @NgModule({
   imports: [
@@ -48,6 +49,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     AboutusComponent,
     ProductComponent,
     ContactusComponent,
+    ProductShoppingcartComponent,
   ],
   bootstrap: [AppComponent],
 })
